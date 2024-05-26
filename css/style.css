@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0 ;
+}
+body{
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(53, 46, 40);
+    width: fit-content;
+    position: relative;
+    transition: 0.5s all;
+    
+ }
+ h1::after{
+    content: "";
+    position: absolute;
+    background-color: darkorange;
+    width: 100%;
+    height:35% ;
+    left:0px;
+    bottom: 0px;
+    z-index: -1;
+ }
+ h1:hover::after {
+    background-color: darkorange;
+    height: 75%;
+    
+}
+h2{
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-image:linear-gradient(to right ,rgba(62, 165, 91,1),rgba(178, 172, 74,1));
+    font-size: 30px;
+    color:transparent;
+    background-clip: text;
+
+
+}
+section .caption{
+    border: 3px dotted rgb(45, 45, 45);
+    border-left: none;
+    border-right: none;
+}

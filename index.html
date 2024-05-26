@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookmark</title>
+    <link rel="icon" href="image/Circle-icons-computer.svg.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/848d6dc04b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <main class="min-vh-100 bg-info-subtle">
+        <section class="w-75 mx-auto  ">
+            <h1 class="text-center start-50  translate-middle-x  ">Bookmarker</h1>
+            <div class=" my-5 caption">
+                <h2 class="text-center my-5 py-3"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                        class="fa-solid fa-bookmark"></i></h2>
+                <div class="my-3">
+                    <label for="bookmarkName" class="text-start fw-bolder fs-5"><i class="fa-solid fa-book-bookmark me-2"></i> Site Name</label>
+                    <input type="text" class="form-control" id="bookmarkName" placeholder="Bookmark Name">
+                </div>
+                <div class="my-3">
+                    <label for="bookmarkSite" class="text-start fw-bolder fs-5"><i class="fa-solid fa-link me-2"></i>Site URL</label>
+                    <input type="text" class="form-control" id="bookmarkSite" placeholder="Website URL">
+                </div>
+                <div class="text-center mb-3">
+                    <button class="btn py-1 px-5 btn-primary" onclick="bookmarkSave()">Submit</button>
+                </div>
+            </div>
+            <div>
+                <div class="container bg-light ">
+                    <div class="row text-center border border-top-0 border-start-0 border-end-0 border-secondary">
+                        <div class="col-3">
+                            <p class="h6 my-2 fw-bolder">Index</p>
+                        </div>
+                        <div class="col-3">
+                            <p class="h6 my-2 fw-bolder">WebSite Name</p>
+                        </div>
+                        <div class="col-3">
+                            <p class="h6 my-2 fw-bolder">Visit</p>
+                        </div>
+                        <div class="col-3">
+                            <p class="h6 my-2 fw-bolder">Delete</p>
+                        </div>                
+                    </div>
+                    <div class="row text-center border border-1 border-start-0 border-end-0 border-secondary-subtle" id="demoList">
+                    </div>
+                </div>
+            </div>
+            
+        </section> 
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
