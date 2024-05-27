@@ -91,7 +91,7 @@ function validateUrl() {
     return (pattern.test(bookmarkSite.value));
 };
 function soundAlarm(){
-    var snd = new Audio('../audio/Beep Alarm.mp3');
+    var snd = new Audio('./audio/Beep Alarm.mp3');
     snd.play();
 }
 
